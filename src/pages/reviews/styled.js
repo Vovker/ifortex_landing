@@ -9,7 +9,7 @@ const SlideWrapper = styled(Wrapper)`
 `;
 
 const ReviewsContentWrapper = styled(ContentWrapper)`
-  max-width: 100%;
+  max-width: 65%;
   justify-content: flex-start;
 `;
 

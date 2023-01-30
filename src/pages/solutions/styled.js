@@ -27,11 +27,11 @@ const Title = styled.div`
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: ${props => props.theme.colors.primary};
-  
-  @media (max-width: 1440px) {
+
+  @media (max-width: 1440px) or (max-height: 1024px) {
     font-size: 64px;
     line-height: 72px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   @media (max-width: 480px) {
@@ -44,6 +44,7 @@ const Title = styled.div`
 const TextWrapper = styled.div`
   display: flex;
   gap: 16px;
+  margin-bottom: 20px;
 `;
 
 const Dash = styled.div`

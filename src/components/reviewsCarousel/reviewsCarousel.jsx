@@ -42,7 +42,7 @@ export const ReviewsCarousel = () => {
         showIndicators={true}
         interval={5000}
         centerMode={true}
-        centerSlidePercentage={isMobile ? 90 : 70}
+        centerSlidePercentage={isMobile ? 100 : 100}
       >
         <Review
           avatar={'https://www.w3schools.com/howto/img_avatar.png'}

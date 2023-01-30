@@ -1,33 +1,33 @@
 import {Header} from '../header/header';
 import {PageWrapper, SiteWrapper} from './styled';
 import {PageController} from "../pageController/pageController";
-import {useEffect, useRef} from "react";
+import {useLayoutEffect, useRef} from "react";
 import {useNavigate} from "react-router-dom";
 import pages from "../../pages";
 import {isMobile} from "react-device-detect";
 
-export const Wrapper = ({ children }) => {
+export const pageHeight = '1200';
+export const Wrapper = ({children}) => {
 
   const blockRef = useRef(null);
-  const pageHeight = '1000';
 
   const navigate = useNavigate();
 
   const handleScroll = () => {
     if (blockRef.current) {
-      const windowOffset = window.pageYOffset;
-      const calcPage = Math.floor(windowOffset / pageHeight);
-      console.log(calcPage);
-      navigate(pages[calcPage]);
+      if(pages[~~((window.pageYOffset + 0.5 * pageHeight) / pageHeight)] !== window.location.pathname)
+        navigate(pages[~~((window.pageYOffset + 0.5 * pageHeight) / pageHeight)]);
     }
   };
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  useLayoutEffect(() => {
+    if(!isMobile) {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
+  }, [handleScroll]);
 
   return (
     <SiteWrapper

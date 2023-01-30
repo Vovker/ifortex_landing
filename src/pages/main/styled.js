@@ -25,9 +25,9 @@ const ContentWrapper = styled.div`
   max-width: 1200px;
   margin-top: 220px;
   
-  @media (max-width: 1920px) {
+  @media (max-width: 1900px) {
     max-width: 65%;
-    margin-top: 150px;
+    margin-top: 100px;
   }
   
   @media (max-width: 1024px) {

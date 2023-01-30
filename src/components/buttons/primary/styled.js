@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ButtonWrapper = styled.button`
+const ButtonWrapper = styled.a`
   width: 260px;
   height: 64px;
   background: ${props => props.theme.colors.primary};
@@ -17,6 +17,7 @@ const ButtonWrapper = styled.button`
   letter-spacing: 0.06em;
   color: ${props => props.theme.colors.primaryGrey};
   transition: 0.5s;
+  text-decoration: none;
   
   &:hover {
     cursor: pointer;

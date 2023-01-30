@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsStarter(false);
-    }, 2100)
+    }, 2200)
   }, []);
 
   return (

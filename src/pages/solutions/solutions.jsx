@@ -21,7 +21,19 @@ export const Solutions = () => {
         <TextWrapper>
           <Dash/>
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            Welcome to iFortex, your trusted partner for full-cycle web development. We specialize in creating custom websites and apps that are tailored to meet the unique needs of our clients. Whether you're a startup or an established company, our team of experienced developers can help bring your digital vision to life.
+          </Text>
+        </TextWrapper>
+        <TextWrapper>
+          <Dash/>
+          <Text>
+            At iFortex, we understand that building a website or app can be a daunting task. That's why we take a personalized approach to every project, working closely with our clients to ensure their needs and goals are met. With our comprehensive services, you can focus on growing your business while we handle the technical details.
+          </Text>
+        </TextWrapper>
+        <TextWrapper>
+          <Dash/>
+          <Text>
+            So if you're looking for a reliable and approachable team to help bring your web development ideas to life, look no further than iFortex. <a style={{color: '#F1F1F1'}} href="mailto:sales@ifortex.com">Contact us</a> today to learn more and start your next project.
           </Text>
         </TextWrapper>
       </ContentWrapper>

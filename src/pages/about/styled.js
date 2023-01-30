@@ -17,10 +17,11 @@ const Title = styled.div`
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: ${props => props.theme.colors.primary};
-  
-  @media (max-width: 1440px) {
-    font-size: 72px;
-    margin-bottom: 80px;
+
+  @media (max-width: 1440px) or (max-height: 1024px) {
+    font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 50px;
   }
   
   @media (max-width: 480px) {
@@ -33,10 +34,10 @@ const Title = styled.div`
 const ContentWrapper = styled.div`
   width: 100%;
   max-width: 1350px;
-  margin-top: 300px;
+  margin-top: 220px;
   
-  @media (max-width: 1920px) {
-    margin-top: 150px;
+  @media (max-width: 1900px) {
+    margin-top: 100px;
     max-width: 65%;
   }
   
@@ -55,6 +56,7 @@ const ArticlesWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: auto;
   
   @media (max-width: 1024px) {
     gap: 60px;
@@ -116,7 +118,8 @@ const ArticleText = styled.div`
   line-height: 22px;
   letter-spacing: 0.06em;
   margin-left: 80px;
-  height: 150px;
+  height: 100%;
+  padding-bottom: 20px;
   border-bottom: 6px solid ${props => props.theme.colors.primary};
   
   @media (max-width: 1440px) {

@@ -4,6 +4,10 @@ const SiteWrapper = styled.div`
   overflow-x: hidden;
   height: calc(var(---pageHeight) * 8);
   position: relative;
+  
+  @media(max-width: 1024px){
+    height: auto;
+  }
 `;
 
 const PageWrapper = styled.div`

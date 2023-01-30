@@ -27,6 +27,17 @@ import django_logo from '../../assets/technologies/django.svg';
 import csharp_logo from '../../assets/technologies/csharp.png';
 import dotnet_logo from '../../assets/technologies/dotnet.png';
 import golang_logo from '../../assets/technologies/golang.png';
+import dynamodb_logo from '../../assets/technologies/aws-dynamodb.svg';
+import kotlin_logo from '../../assets/technologies/kotlin-1.svg';
+import reactNative_logo from '../../assets/technologies/react_native.svg';
+import swift_logo from '../../assets/technologies/swift-15.svg';
+import xamarin_logo from '../../assets/technologies/xamarin.svg';
+import flutter_logo from '../../assets/technologies/flutter.svg';
+import aws_logo from '../../assets/technologies/aws-2.svg';
+import azure_logo from '../../assets/technologies/azure-1.svg';
+import google_logo from '../../assets/technologies/google-cloud.svg';
+import heroku_logo from '../../assets/technologies/heroku.svg';
+import digitalOcean_logo from '../../assets/technologies/digitalocean.svg';
 import {useEffect} from "react";
 import {ContentWrapper} from "../main/styled";
 
@@ -54,6 +65,7 @@ export const Technologies = () => {
             {title: 'MS SQL', icon: mssql_logo},
             {title: 'PostgreSQL', icon: postgresql},
             {title: 'MongoDB', icon: mongodb_logo},
+            {title: 'DynamoDB', icon: dynamodb_logo},
           ]}/>
           <Article title={'UI/UX tools'} technologies={[
             {title: 'Figma', icon: figma_logo},
@@ -71,8 +83,20 @@ export const Technologies = () => {
             {title: '.NET', icon: dotnet_logo},
             {title: 'Go', icon: golang_logo},
           ]}/>
-          <Article title={'Mobile'} technologies={[]}/>
-          <Article title={'Services'} technologies={[]}/>
+          <Article title={'Mobile'} technologies={[
+            {title: 'Kotlin', icon: kotlin_logo},
+            {title: 'React Native', icon: reactNative_logo},
+            {title: 'Swift', icon: swift_logo},
+            {title: 'Xamarin', icon: xamarin_logo},
+            {title: 'Flutter', icon: flutter_logo},
+          ]}/>
+          <Article title={'Services'} technologies={[
+            {title: 'AWS', icon: aws_logo},
+            {title: 'Azure', icon: azure_logo},
+            {title: 'Google Cloud', icon: google_logo},
+            {title: 'Heroku', icon: heroku_logo},
+            {title: 'Digital Ocean', icon: digitalOcean_logo}
+          ]}/>
         </TechnologiesWrapper>
       </ContentWrapper>
     </SlideWrapper>

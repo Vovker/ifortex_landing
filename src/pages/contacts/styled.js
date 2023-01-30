@@ -8,9 +8,8 @@ const fadeInAnimation = keyframes(fadeIn);
 const SlideWrapper = styled(Wrapper)`
   background: url(${background}) no-repeat 100% 100%;
   animation: 0.7s ease-in-out ${fadeInAnimation};
-  
-  @media (max-width: 1440px) {
-    background-size: 70%;
+  @media (max-width: 1920px) {
+    background-size: 50% auto;
   }
 `;
 
