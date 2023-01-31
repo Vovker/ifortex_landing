@@ -39,9 +39,9 @@ function App() {
                                         <Route path={"/about"} element={<About/>}/>
                                         <Route path={"/services"} element={<Services/>}/>
                                         <Route path={"/technologies"} element={<Technologies/>}/>
-                                        <Route path={"/expertise"} element={<Expertise/>}/>
-                                        <Route path={"/reviews"} element={<Reviews/>}/>
-                                        <Route path={"/contacts"} element={<Contacts/>}/>
+                                        <Route path={"/expertise"} id={'/expertise'} element={<Expertise/>}/>
+                                        <Route path={"/reviews"} id={'/reviews'} element={<Reviews/>}/>
+                                        <Route path={"/contacts"} id={'/contacts'} element={<Contacts/>}/>
                                     </Routes> :
                                     <>
                                         <Main/>

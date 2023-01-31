@@ -18,7 +18,7 @@ export const Services = () => {
   }, []);
 
   return (
-    <SlideWrapper>
+    <SlideWrapper id={'/services'}>
       <ContentWrapper>
         <ServicesTitle>Services</ServicesTitle>
         <ArticlesWrapper>

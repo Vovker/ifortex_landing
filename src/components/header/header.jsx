@@ -3,7 +3,7 @@ import {
   LinksWrapper,
   Logo,
   StyledLink,
-  BurgerIcon, Close
+  Close
 } from "./styled";
 import logo from "../../assets/logo.svg";
 import {Link, useNavigate} from "react-router-dom";
@@ -30,12 +30,12 @@ export const Header = () => {
       <Link to="/" onClick={() => handleRedirect('/')}>
         <Logo src={logo} alt="logo" onClick={() => navigate('/')} />
       </Link>
-      {
-        isMobile && <BurgerIcon
-          src={burgerIcon}
-          onClick={() => setIsOpened(true)}
-        />
-      }
+      {/*{*/}
+      {/*  isMobile && <BurgerIcon*/}
+      {/*    src={burgerIcon}*/}
+      {/*    onClick={() => setIsOpened(true)}*/}
+      {/*  />*/}
+      {/*}*/}
       <LinksWrapper isOpened={!isMobile ? true : isOpened} onClick={() => setIsOpened(false)}>
         {
           isMobile && <Close

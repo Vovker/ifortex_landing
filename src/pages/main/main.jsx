@@ -5,7 +5,7 @@ import {PrimaryButton} from "../../components/buttons/primary/primaryButton";
 export const Main = React.memo(() => {
 
   return (
-    <Wrapper>
+    <Wrapper id={'/'}>
       <ContentWrapper>
         <Title>Quality software solutions</Title>
         <PrimaryButton>Contact Us</PrimaryButton>

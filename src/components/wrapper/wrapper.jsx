@@ -1,7 +1,7 @@
 import {Header} from '../header/header';
 import {PageWrapper, SiteWrapper} from './styled';
 import {PageController} from "../pageController/pageController";
-import {useLayoutEffect, useRef} from "react";
+import {useCallback, useLayoutEffect, useRef} from "react";
 import {useNavigate} from "react-router-dom";
 import pages from "../../pages";
 import {isMobile} from "react-device-detect";
@@ -13,12 +13,12 @@ export const Wrapper = ({children}) => {
 
   const navigate = useNavigate();
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (blockRef.current) {
       if(pages[~~((window.pageYOffset + 0.5 * pageHeight) / pageHeight)] !== window.location.pathname)
         navigate(pages[~~((window.pageYOffset + 0.5 * pageHeight) / pageHeight)]);
     }
-  };
+  }, [navigate]);
 
   useLayoutEffect(() => {
     if(!isMobile) {

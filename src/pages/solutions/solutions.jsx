@@ -15,7 +15,7 @@ export const Solutions = () => {
   }, []);
 
   return (
-    <SlideWrapper>
+    <SlideWrapper id={'/solutions'}>
       <ContentWrapper>
         <Title>Solutions for your business</Title>
         <TextWrapper>

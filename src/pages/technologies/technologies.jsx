@@ -48,7 +48,7 @@ export const Technologies = () => {
   }, []);
 
   return (
-    <SlideWrapper>
+    <SlideWrapper id={'/technologies'}>
       <ContentWrapper>
         <TechnologiesTitle>Technologies</TechnologiesTitle>
         <TechnologiesWrapper>

@@ -40,6 +40,7 @@ const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 100px;
     padding: 0 16px 20px 16px;
   }

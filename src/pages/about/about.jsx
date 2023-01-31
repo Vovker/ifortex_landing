@@ -16,7 +16,7 @@ export const About = () => {
   }, []);
 
   return (
-    <SlideWrapper>
+    <SlideWrapper id={'/about'}>
       <ContentWrapper>
         <Title>About</Title>
         <ArticlesWrapper>

@@ -64,7 +64,6 @@ const ArticlesWrapper = styled.div`
   
   @media (max-width: 480px) {
     flex-direction: column;
-    gap: 40px;
   }
 `;
 
@@ -72,6 +71,10 @@ const ArticleWrapper = styled.div`
   width: 576px;
   display: flex;
   flex-direction: column;
+  
+  @media (max-width: 1920px) {
+    width: 45%;
+  }
   
   @media (max-width: 1024px) {
     width: 50%;
