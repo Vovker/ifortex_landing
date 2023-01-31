@@ -17,6 +17,10 @@ const SlideWrapper = styled(Wrapper)`
   @media (max-width: 1440px) {
     background-size: 70%;
   }
+
+  @media (max-width: 480px) {
+    background-size: 100% auto;
+  }
 `;
 
 const Title = styled.div`

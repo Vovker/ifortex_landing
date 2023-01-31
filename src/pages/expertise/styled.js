@@ -12,6 +12,10 @@ const SlideWrapper = styled(Wrapper)`
   @media (max-width: 1440px) {
     background-size: 35%;
   }
+  
+  @media (max-width: 480px) {
+    background-size: 70% auto;
+  }
 `;
 
 const ExpertiseTitle = styled(Title)`

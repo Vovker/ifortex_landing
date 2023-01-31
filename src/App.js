@@ -12,39 +12,53 @@ import {ThemeProvider} from "styled-components";
 import theme from "./theme";
 import {useEffect, useState} from "react";
 import {Starter} from "./components/starter/starter";
+import {isMobile} from "react-device-detect";
 
 function App() {
 
-  const [isStarter, setIsStarter] = useState(true);
+    const [isStarter, setIsStarter] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsStarter(false);
-    }, 2200)
-  }, []);
+    useEffect(() => {
+        setTimeout(() => {
+            setIsStarter(false);
+        }, 2200)
+    }, []);
 
-  return (
-      <ThemeProvider theme={theme}>
-        <BrowserRouter>
-          {
-            isStarter ?
-              <Starter/> :
-              <Wrapper>
-                <Routes>
-                  <Route path={"/"} exact element={<Main/>}/>
-                  <Route path={"/solutions"} element={<Solutions/>}/>
-                  <Route path={"/about"} element={<About/>}/>
-                  <Route path={"/services"} element={<Services/>}/>
-                  <Route path={"/technologies"} element={<Technologies/>}/>
-                  <Route path={"/expertise"} element={<Expertise/>}/>
-                  <Route path={"/reviews"} element={<Reviews/>}/>
-                  <Route path={"/contacts"} element={<Contacts/>}/>
-                </Routes>
-              </Wrapper>
-          }
-        </BrowserRouter>
-      </ThemeProvider>
-  );
+    return (
+        <ThemeProvider theme={theme}>
+            <BrowserRouter>
+                {
+                    isStarter ?
+                        <Starter/> :
+                        <Wrapper>
+                            {
+                                !isMobile ?
+                                    <Routes>
+                                        <Route path={"/"} exact element={<Main/>}/>
+                                        <Route path={"/solutions"} element={<Solutions/>}/>
+                                        <Route path={"/about"} element={<About/>}/>
+                                        <Route path={"/services"} element={<Services/>}/>
+                                        <Route path={"/technologies"} element={<Technologies/>}/>
+                                        <Route path={"/expertise"} element={<Expertise/>}/>
+                                        <Route path={"/reviews"} element={<Reviews/>}/>
+                                        <Route path={"/contacts"} element={<Contacts/>}/>
+                                    </Routes> :
+                                    <>
+                                        <Main/>
+                                        <Solutions/>
+                                        <About/>
+                                        <Services/>
+                                        <Technologies/>
+                                        <Expertise/>
+                                        <Reviews/>
+                                        <Contacts/>
+                                    </>
+                            }
+                        </Wrapper>
+                }
+            </BrowserRouter>
+        </ThemeProvider>
+    );
 }
 
 export default App;

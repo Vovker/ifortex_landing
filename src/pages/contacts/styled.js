@@ -11,6 +11,10 @@ const SlideWrapper = styled(Wrapper)`
   @media (max-width: 1920px) {
     background-size: 50% auto;
   }
+
+  @media (max-width: 480px) {
+    background-size: 100% auto;
+  }
 `;
 
 const ContactTitle = styled(Title)`
