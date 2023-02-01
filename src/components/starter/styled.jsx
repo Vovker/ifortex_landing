@@ -44,14 +44,16 @@ const Logo = styled.img`
     }
   }
   
-  width: 400px;
-  animation: 1s ${logoAnimation} forwards,
-  1s moveTop 1.8s forwards;
+  @media (min-width: 480px) {
+    width: 400px;
+    animation: 1s ${logoAnimation} forwards,
+    1s moveTop 1.8s forwards;
+  }
   
   @media (max-width: 480px) {
     width: 200px;
     animation: 1s ${logoAnimation} forwards,
-    1.15s moveTopMobile 1.8s forwards;
+    1.15s moveTopMobile 1.95s forwards;
   }
 ;
 `;
