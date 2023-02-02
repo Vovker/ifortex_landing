@@ -87,7 +87,7 @@ export const ReviewsCarousel = () => {
                             , COO of Owl’s group
                         </>
                     }
-                    description={'Owls Group gives thanks to Ifortex for developing an application for a private clinic in the USA. Fast, clear, professional. '}
+                    description={'Owls Group gives thanks to Ifortex for helping with development an application for a private clinic in the USA. Fast, clear, professional. '}
                 />
                 <Review
                     avatar={avatar5}
