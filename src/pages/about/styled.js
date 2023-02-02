@@ -28,6 +28,9 @@ const Title = styled.div`
     font-size: 36px;
     line-height: 42px;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
   }
 `;
 

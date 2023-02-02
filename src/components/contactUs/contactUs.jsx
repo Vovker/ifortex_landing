@@ -6,13 +6,13 @@ import telegramIcon from '../../assets/telegram.svg';
 export const ContactUs = () => {
     return (
         <ContactUsWrapper>
-            <PrimaryButton>Contact Us</PrimaryButton>
+            <PrimaryButton>Contact via email</PrimaryButton>
             <SocialWrapper href={'https://linkedin.com/company/ifortex'} target={'_blank'}>
                 <SocialIcon src={linkedinIcon}/>
             </SocialWrapper>
             <SocialWrapper href={'https://t.me/iFortexTeam'} target={'_blank'}>
                 <SocialIcon src={telegramIcon}/>
-            </SocialWrapper>
+            </SocialWrapper>z
         </ContactUsWrapper>
     );
 }
