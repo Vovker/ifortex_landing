@@ -8,7 +8,6 @@ import {
 import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import quotes from '../../assets/double_quotes.svg';
-import {isMobile} from "react-device-detect";
 
 export const Review = ({avatar, title, description}) => {
   return (
@@ -40,9 +39,9 @@ export const ReviewsCarousel = () => {
         showStatus={false}
         showArrows={false}
         showIndicators={true}
-        interval={5000}
+        interval={4000}
         centerMode={true}
-        centerSlidePercentage={isMobile ? 100 : 100}
+        centerSlidePercentage={100}
       >
         <Review
           avatar={'https://www.w3schools.com/howto/img_avatar.png'}

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 const ButtonWrapper = styled.a`
   width: 260px;
   height: 64px;

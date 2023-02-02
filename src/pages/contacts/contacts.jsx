@@ -1,7 +1,7 @@
 import {useEffect} from "react";
 import {ContactTitle, Description, SlideWrapper} from "./styled";
 import {ContentWrapper} from "../main/styled";
-import {PrimaryButton} from "../../components/buttons/primary/primaryButton";
+import {ContactUs} from "../../components/contactUs/contactUs";
 
 export const Contacts = () => {
 
@@ -19,7 +19,7 @@ export const Contacts = () => {
           <br/>
           Our team is available to answer any questions and provide a quote for your project. We look forward to helping you bring your digital vision to life. Contact us today!
         </Description>
-        <PrimaryButton>Contact Us</PrimaryButton>
+        <ContactUs/>
       </ContentWrapper>
     </SlideWrapper>
   );
