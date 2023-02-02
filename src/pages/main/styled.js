@@ -1,5 +1,5 @@
 import styled, {keyframes} from "styled-components";
-import background from "../../assets/main_background.webp";
+import background from "../../assets/main_background.jpg";
 import {fadeIn} from "react-animations";
 
 const fadeInAnimation = keyframes(fadeIn);

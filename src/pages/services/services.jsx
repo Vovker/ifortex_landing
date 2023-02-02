@@ -5,7 +5,6 @@ import {
   ArticleText,
   ArticleTitle,
   ArticleWrapper,
-  Dash,
   ServicesTitle,
   SlideWrapper
 } from "./styled";
@@ -50,7 +49,7 @@ export const Services = () => {
               </ArticleText>
             </ArticleWrapper>
             <ArticleWrapper>
-              <ArticleTitle className={'bold'}><Dash/>  Software Testing & QA</ArticleTitle>
+              <ArticleTitle>Software Testing & QA</ArticleTitle>
               <ArticleText>
                 Ensure the quality and reliability of your website or app with our comprehensive software testing services. Our QA team will thoroughly test your product to identify and resolve any bugs or issues before launch.
               </ArticleText>

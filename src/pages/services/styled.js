@@ -2,13 +2,23 @@ import styled, {keyframes} from 'styled-components';
 import {Title} from "../main/styled";
 import {Wrapper} from "../main/styled";
 import {fadeIn} from "react-animations";
+import background from '../../assets/expertise_background.webp';
 
 const fadeInAnimation = keyframes(fadeIn);
 
 
 const SlideWrapper = styled(Wrapper)`
   background: unset;
+  background: url(${background}) no-repeat 100% 100%;
   animation: 0.7s ease-in-out ${fadeInAnimation};
+
+  @media (max-width: 1440px) {
+    background-size: 35%;
+  }
+
+  @media (max-width: 480px) {
+    background-size: 70% auto;
+  }
 `;
 
 const ServicesTitle = styled(Title)`
