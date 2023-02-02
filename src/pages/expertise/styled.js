@@ -26,7 +26,7 @@ const ExpertiseTitle = styled(Title)`
   }
   
   @media (max-width: 480px) {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 `;
 

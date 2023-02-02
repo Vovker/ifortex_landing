@@ -41,7 +41,7 @@ const ContentWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 30px;
     padding: 0 16px 20px 16px;
   }
 `;
@@ -64,6 +64,7 @@ const Title = styled.div`
     font-size: 36px;
     line-height: 42px;
     text-align: center;
+    margin-bottom: 40px;
   }
 `;
 

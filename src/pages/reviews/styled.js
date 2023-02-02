@@ -32,8 +32,8 @@ const ReviewsTitle = styled(Title)`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
     padding: 0 16px 20px 16px;
+    margin-top: 40px;
   }
 `;
 

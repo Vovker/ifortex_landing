@@ -10,7 +10,7 @@ export const ContactUs = () => {
             <SocialWrapper href={'https://linkedin.com/company/ifortex'} target={'_blank'}>
                 <SocialIcon src={linkedinIcon}/>
             </SocialWrapper>
-            <SocialWrapper href={'https://t.me/Blackened1990'} target={'_blank'}>
+            <SocialWrapper href={'https://t.me/iFortexTeam'} target={'_blank'}>
                 <SocialIcon src={telegramIcon}/>
             </SocialWrapper>
         </ContactUsWrapper>

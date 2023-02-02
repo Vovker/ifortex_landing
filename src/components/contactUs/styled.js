@@ -4,6 +4,10 @@ const ContactUsWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
+  
+  @media (max-width: 480px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const SocialWrapper = styled.a`

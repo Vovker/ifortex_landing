@@ -42,6 +42,7 @@ const Title = styled.div`
     font-size: 36px;
     line-height: 42px;
     text-align: center;
+    margin-bottom: 40px;
   }
 `;
 

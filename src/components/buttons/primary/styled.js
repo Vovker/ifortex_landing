@@ -22,6 +22,10 @@ const ButtonWrapper = styled.a`
     cursor: pointer;
     transform: scale(1.05);
   }
+  
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export {ButtonWrapper};

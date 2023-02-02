@@ -18,9 +18,9 @@ const TechnologiesTitle = styled(Title)`
   }
   
   @media (max-width: 480px) {
-    margin-bottom: 50px;
     font-size: 36px;
     line-height: 42px;
+    margin-bottom: 40px;
   }
 `;
 

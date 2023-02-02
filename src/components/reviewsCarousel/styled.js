@@ -6,13 +6,22 @@ const ReviewWrapper = styled.div`
   display: flex;
   justify-content: center;
   padding: 0 80px;
-  
+  position: relative;
+
   @media (max-width: 1440px) {
     padding: 0 40px;
   }
-  
+
   @media (max-width: 768px) {
     padding: 0 20px;
+    height: 300px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 10px;
+    width: 320px;
+    height: 380px;
+    min-width: 320px;
   }
 `;
 
@@ -37,6 +46,17 @@ const Quotes = styled.img`
     margin-top: ${props => props.rotated ? 0 : 110}px;
     margin-bottom: ${props => props.rotated ? 110 : 0}px;
   }
+  
+    @media (max-width: 480px) {
+      width: 22px !important;
+      margin-top: ${props => props.rotated ? 0 : 160}px;
+      margin-bottom: ${props => props.rotated ? 160 : 0}px;
+      position: absolute;
+        top: ${props => props.rotated ? 0 : 'auto'};
+        bottom: ${props => props.rotated ? 'auto' : 0};
+        left: ${props => props.rotated ? 'auto' : 0};
+        right: ${props => props.rotated ? 0 : 'auto'};
+    }
 `;
 
 const Avatar = styled.div`
@@ -100,11 +120,17 @@ const ReviewTitle = styled.div`
   letter-spacing: 0.06em;
   text-align: left;
   color: ${props => props.theme.colors.darkWhite};
-  
+
   @media (max-width: 1024px) {
     margin-bottom: 12px;
     font-size: 20px;
     line-height: 27px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
   }
 `;
 
@@ -122,6 +148,11 @@ const ReviewText = styled.div`
     font-size: 16px;
     line-height: 22px;
   }
+  
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
 `;
 
 const CarouselWrapper = styled.div`
@@ -147,6 +178,19 @@ const CarouselWrapper = styled.div`
       opacity: 1;
     }
   }
+  
+    @media (max-width: 480px) {
+      .carousel-root {
+        .carousel-slider {
+          height: 420px;
+          width: 320px !important;
+          
+          .slide {
+            min-width: 320px !important;
+          }
+        }
+      }
+    }
 `;
 
 export {
